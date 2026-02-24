@@ -76,7 +76,7 @@ class _AgeCalculatorPageState extends State<AgeCalculatorPage> {
       appBar: AppBar(
         title: const Text(
           "Age Calculator",
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
       ),
@@ -85,8 +85,6 @@ class _AgeCalculatorPageState extends State<AgeCalculatorPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.cake, size: 90, color: Colors.pinkAccent),
-            const SizedBox(height: 20),
             TextField(
               controller: _dobController,
               keyboardType: TextInputType.datetime,

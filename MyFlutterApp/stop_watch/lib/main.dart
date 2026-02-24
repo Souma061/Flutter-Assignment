@@ -15,8 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      themeMode: ThemeMode.dark,
-      darkTheme: ThemeData.dark(useMaterial3: true),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueGrey),
+      ),
       home: const StopWatchPage(),
     );
   }
@@ -116,10 +118,10 @@ class _StopWatchPageState extends State<StopWatchPage> {
                 _buildButton(
                   color: _stopwatch.isRunning
                       ? Colors.red[900]!
-                      : Colors.green[900]!,
+                      : Colors.blue[900]!,
                   textColor: _stopwatch.isRunning
                       ? Colors.red[300]!
-                      : Colors.green[300]!,
+                      : Colors.blue[300]!,
                   text: _stopwatch.isRunning ? "Stop" : "Start",
                   onPressed: _stopwatch.isRunning
                       ? _stopStopWatch

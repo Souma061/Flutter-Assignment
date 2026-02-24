@@ -15,7 +15,8 @@ class VoterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.red),
+      themeMode: ThemeMode.dark,
+      darkTheme: ThemeData.dark(useMaterial3: true),
       home: const VoterScreen(),
     );
   }
@@ -76,9 +77,13 @@ class _VoterScreenState extends State<VoterScreen> {
             Expanded(
               child: Row(
                 children: [
-                  _buildListColumn("Eligible (18+)", eligible, Colors.green),
+                  _buildListColumn("Eligible", eligible, Colors.green),
                   const VerticalDivider(),
-                  _buildListColumn("Ineligible", ineligible, Colors.redAccent),
+                  _buildListColumn(
+                    "Not Eligible",
+                    ineligible,
+                    Colors.redAccent,
+                  ),
                 ],
               ),
             ),
