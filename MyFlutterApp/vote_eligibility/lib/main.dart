@@ -54,7 +54,10 @@ class _VoterScreenState extends State<VoterScreen> {
     List<Person> ineligible = _people.where((p) => p.age < 18).toList();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Voter Eligibility Tracker')),
+      appBar: AppBar(
+        title: const Text('Voter Eligibility Tracker'),
+        centerTitle: true,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

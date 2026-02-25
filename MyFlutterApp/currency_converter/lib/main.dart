@@ -81,7 +81,7 @@ class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
       appBar: AppBar(
         title: Text('Currency Converter'),
         centerTitle: false,
-        backgroundColor: Colors.amberAccent,
+        backgroundColor: Colors.blueAccent,
       ),
       body: Center(
         child: Column(

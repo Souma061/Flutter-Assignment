@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Age Calculator App',
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData.dark(useMaterial3: true),
       home: const AgeCalculatorPage(),
