@@ -93,6 +93,7 @@ class _AgeCalculatorPageState extends State<AgeCalculatorPage> {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(12)),
                 ),
+                icon: Icon(Icons.cake),
 
                 prefixIcon: Icon(Icons.calendar_today),
               ),

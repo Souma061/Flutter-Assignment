@@ -118,10 +118,10 @@ class _StopWatchPageState extends State<StopWatchPage> {
                 _buildButton(
                   color: _stopwatch.isRunning
                       ? Colors.red[900]!
-                      : Colors.blue[900]!,
+                      : Colors.green[900]!,
                   textColor: _stopwatch.isRunning
                       ? Colors.red[300]!
-                      : Colors.blue[300]!,
+                      : Colors.green[300]!,
                   text: _stopwatch.isRunning ? "Stop" : "Start",
                   onPressed: _stopwatch.isRunning
                       ? _stopStopWatch
