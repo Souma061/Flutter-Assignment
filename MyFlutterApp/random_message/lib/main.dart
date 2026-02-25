@@ -57,7 +57,12 @@ class _RandomMessageState extends State<RandomMessage> {
           onPressed: _updateMessage, // Trigger the logic on press
           child: Text(
             _messages[_currentIndex], // Display current message
-            style: const TextStyle(fontSize: 20),
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              fontStyle: FontStyle.italic,
+            ),
           ),
         ),
       ),

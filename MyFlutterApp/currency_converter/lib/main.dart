@@ -1,10 +1,12 @@
 import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -134,12 +136,13 @@ class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
                 convertCurrency();
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.amberAccent,
-                foregroundColor: Colors.red,
+                backgroundColor: Colors.blueAccent,
+                foregroundColor: Colors.white,
                 fixedSize: Size(150, 50),
                 shape: BeveledRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                 ),
+                textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               child: Text('Convert'),
             ),

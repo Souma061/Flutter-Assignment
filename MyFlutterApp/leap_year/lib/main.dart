@@ -73,7 +73,18 @@ class _LeapYearPageState extends State<LeapYearPage> {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: _checkLeapYear,
-              child: const Text('Check'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.indigo,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 30,
+                  vertical: 15,
+                ),
+              ),
+              child: const Text(
+                'Check',
+                style: TextStyle(fontSize: 18, letterSpacing: 1.2),
+              ),
             ),
             const SizedBox(height: 20),
             Text(

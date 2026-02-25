@@ -126,7 +126,21 @@ class _WeatherScreenState extends State<WeatherScreen> {
               ],
             ),
             const SizedBox(height: 16),
-            ElevatedButton(onPressed: _convert, child: const Text('Convert')),
+            ElevatedButton(
+              onPressed: _convert,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueGrey,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 30,
+                  vertical: 12,
+                ),
+              ),
+              child: const Text(
+                'Convert',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            ),
             const SizedBox(height: 16),
             Text(_result, style: const TextStyle(fontSize: 18)),
           ],

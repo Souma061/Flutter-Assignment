@@ -56,17 +56,29 @@ class _ColorChangerScreenState extends State<ColorChangerScreen> {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () => _changeColor(Colors.red),
-              child: const Text('Red'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+              ),
+              child: const Text('Red', style: TextStyle(fontSize: 16)),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () => _changeColor(Colors.green),
-              child: const Text('Green'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
+                foregroundColor: Colors.white,
+              ),
+              child: const Text('Green', style: TextStyle(fontSize: 16)),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () => _changeColor(Colors.blue),
-              child: const Text('Blue'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+              ),
+              child: const Text('Blue', style: TextStyle(fontSize: 16)),
             ),
           ],
         ),

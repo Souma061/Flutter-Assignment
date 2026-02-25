@@ -102,6 +102,8 @@ class _AgeCalculatorPageState extends State<AgeCalculatorPage> {
             ElevatedButton(
               onPressed: _calculateAge,
               style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal,
+                foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(
                   horizontal: 40,
                   vertical: 15,
@@ -112,7 +114,11 @@ class _AgeCalculatorPageState extends State<AgeCalculatorPage> {
               ),
               child: const Text(
                 "Calculate Age",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.5,
+                ),
               ),
             ),
             const SizedBox(height: 30),

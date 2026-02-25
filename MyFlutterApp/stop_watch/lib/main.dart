@@ -157,7 +157,8 @@ Widget _buildButton({
         style: TextStyle(
           color: textColor,
           fontSize: 20,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 2,
         ),
       ),
     ),

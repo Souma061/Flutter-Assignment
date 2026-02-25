@@ -74,6 +74,15 @@ class _VoterScreenState extends State<VoterScreen> {
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: _addPerson,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepOrange,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 10,
+                ),
+                textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
               child: const Text('Add Person'),
             ),
             const Divider(),

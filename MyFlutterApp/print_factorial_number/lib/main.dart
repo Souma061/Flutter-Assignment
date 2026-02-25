@@ -83,11 +83,16 @@ class _FactorialPageState extends State<FactorialPage> {
             ElevatedButton(
               onPressed: _calculateFactorial,
               style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.pink,
+                foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(
                   horizontal: 24,
                   vertical: 12,
                 ),
-                textStyle: const TextStyle(fontSize: 18),
+                textStyle: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               child: const Text("Calculate Factorial"),
             ),
